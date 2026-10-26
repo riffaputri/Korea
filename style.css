@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: rgb(238, 208, 36);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a:hover {
+    color: #030303;
+}
+
+a:hover::after {
+    content: "📌";
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+body > header {
+    background-color: rgb(250, 173, 7);
+    color: white;
+    padding-top: 30px;
+}
+
+header {
+    background-color: rgb(250, 173, 7);
+    color: white;
+    padding-top: 30px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+}
+
+#content {
+    flex: 3;
+    min-width: 0;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(10, 10, 10, 0.15);
+    border-radius: 8px;
+}
+
+article img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 15px 0;
+}
+
+section img {
+    max-height: 280px;
+}
+
+article p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+aside {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* Kartu negara */
+aside article {
+    background-color: white !important;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Menghilangkan background berwarna di dalam kartu */
+aside article * {
+    background-color: transparent;
+    background-image: none;
+}
+
+/* Judul negara */
+aside h2 {
+    color: black !important;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subjudul negara */
+aside h3 {
+    color: black !important;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Paragraf dalam kartu negara */
+aside article p {
+    color: black !important;
+    text-align: center;
+}
+
+/* Logo negara berada di tengah */
+aside figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+aside figure img {
+    width: 150px;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Informasi lainnya */
+aside table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Shadow pada bagian informasi lainnya */
+aside table th,
+aside table td {
+    background-color: transparent;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(238, 208, 36);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.quicksand-uniquifier {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
